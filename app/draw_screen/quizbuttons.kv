@@ -1,0 +1,33 @@
+<ButtonText>
+    pos: self.parent.pos
+    size: self.texture_size
+    text_size: self.parent.width, self.parent.height
+    valign: 'middle'
+    halign: 'center'
+
+<QuizButtons>
+    size_hint: (1, .2)
+    BoxLayout:
+        pos: self.parent.pos
+        size: self.parent.size
+        Button:
+            id: undo_button
+            pos: self.parent.pos
+            ButtonText:
+                text: "undo"
+        Button:
+            id: clear_button
+            pos: self.parent.pos
+            ButtonText:
+                text: "clear"
+        Button:
+            id: skip_button
+            pos: self.parent.pos
+            ButtonText:
+                text: "skip"
+                pos: self.parent.pos
+        Button:
+            id: save_button
+            pos: self.parent.pos
+            ButtonText:
+                text: "save"

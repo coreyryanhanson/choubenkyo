@@ -1,0 +1,43 @@
+<SaveDialogue>
+    BoxLayout:
+        pos: self.parent.pos
+        size: self.parent.size
+        orientation: "vertical"
+        FileChooserListView:
+            pos: self.parent.pos
+            size: self.parent.size
+        TextInput:
+            id: text_input
+            size_hint_y: None
+            height: 30
+            multiline: False
+        BoxLayout:
+            size_hint_y: None
+            height: 30
+            Button:
+                text: "Cancel"
+                on_release: root.cancel()
+            Button:
+                text: "Save"
+                on_release: root.save(filechooser.path, text_input.text)
+
+<DirectorySetter>
+    size_hint: (1, .2)
+    BoxLayout:
+        pos: self.parent.pos
+        size: self.parent.size
+        Label:
+            text: "thisisatest"
+            pos: self.parent.pos
+            size: self.texture_size
+            text_size: self.parent.width, self.parent.height
+            valign: 'middle'
+            halign: 'center'
+        Button:
+            Label:
+                text: "Choose"
+                pos: self.parent.pos
+                size: self.texture_size
+                text_size: self.parent.width, self.parent.height
+                valign: 'middle'
+                halign: 'center'
