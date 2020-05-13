@@ -10,7 +10,9 @@
         orientation: "vertical"
         KanaViewer:
         QuizButtons:
+            undo_button_press: kanjidrawpad.undo
         KanjiDrawPad:
+            id: kanjidrawpad
 
 <SettingsScreen>
     BoxLayout:
@@ -18,3 +20,9 @@
         size: self.parent.size
         orientation: "vertical"
         DirectorySetter:
+
+<AllScreens>
+    SettingsScreen:
+        name: 'settings'
+    KanaScreen:
+        name: 'kana_test'

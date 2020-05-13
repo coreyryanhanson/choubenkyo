@@ -4,7 +4,7 @@ from kivy.uix.widget import Widget
 from .view import MainWindow
 from .draw_screen import *
 from .settings_screen import *
-from kivy.uix.screenmanager import ScreenManager, Screen
+from kivy.uix.screenmanager import ScreenManager, Screen, SwapTransition
 
 
 from kivy.lang import Builder
@@ -17,6 +17,10 @@ class KanaScreen(Screen):
 class SettingsScreen(Screen):
     def __init__(self, **kwargs):
         super(SettingsScreen, self).__init__(**kwargs)
+
+class AllScreens(ScreenManager):
+    def __init__(self, **kwargs):
+        super(AllScreens, self).__init__(**kwargs)
 
 class Choubenkyo(App):
     def __init__(self, **kwargs):
@@ -35,6 +39,13 @@ class Choubenkyo(App):
 class Choubenkyo(App):
     def __init__(self, **kwargs):
         super(Choubenkyo, self).__init__(**kwargs)
+
     def build(self):
-        main_app = SettingsScreen()
+        main_app = AllScreens(transition=SwapTransition())
+        test = main_app.get_screen('kana_test')
+        settings = main_app.get_screen('settings')
+        settings_buttons = settings.children[0].children[0].children[0].children
+        print(dir(settings_buttons[0]))
+        print(settings_buttons[0])
+        settings_buttons[0].bind(on_release=main_app.switch_to(test))
         return main_app

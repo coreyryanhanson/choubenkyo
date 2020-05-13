@@ -8,11 +8,12 @@ from kivy.properties import ObjectProperty
 Builder.load_file('app/draw_screen/quizbuttons.kv')
 
 class ButtonText(Label):
+
     def __init__(self, **kwargs):
         super(ButtonText, self).__init__(**kwargs)
 
 class QuizButtons(Widget):
-
+    undo_button_press = ObjectProperty(None)
     clear_button_state = ObjectProperty('normal')
 
     def __init__(self, **kwargs):

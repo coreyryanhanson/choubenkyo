@@ -11,6 +11,7 @@
         pos: self.parent.pos
         size: self.parent.size
         Button:
+            on_release: root.undo_button_press
             id: undo_button
             pos: self.parent.pos
             ButtonText:

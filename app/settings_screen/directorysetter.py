@@ -1,3 +1,4 @@
+import os
 from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.uix.button import Button
@@ -8,20 +9,42 @@ from kivy.uix.popup import Popup
 from kivy.lang import Builder
 from kivy.properties import ObjectProperty, StringProperty
 
-from android.storage import primary_external_storage_path
-sd = primary_external_storage_path()
+class NewFolderDialog(FloatLayout):
+    cancel = ObjectProperty(None)
+    text_input = ObjectProperty(None)
+    create = ObjectProperty(None)
+    path = StringProperty("")
 
+    def __init__(self, **kwargs):
+        super(NewFolderDialog, self).__init__(**kwargs)
 
 class SaveDialog(FloatLayout):
     cancel = ObjectProperty(None)
     text_input = ObjectProperty(None)
     save = ObjectProperty(None)
-    dir_prefix = StringProperty("")
+    create_dir = ObjectProperty(None)
+    dir_prefix = StringProperty("/storage/emulated/0/")
 
     def __init__(self, **kwargs):
         super(SaveDialog, self).__init__(**kwargs)
 
+    def cancel_folder(self):
+        self._popup.dismiss()
+
+    def create_folder(self, path):
+        os.mkdir(path)
+        self.dir_prefix = path
+        self.cancel_folder()
+
+    def prompt_folder(self, path):
+        option = NewFolderDialog(create=self.create_folder, cancel=self.cancel_folder, path=path)
+        self._popup = Popup(title="New Folder", content=option,
+                            size_hint=(1, .3))
+        self._popup.open()
+
 class DirectorySetter(Widget):
+    full_filepath = StringProperty("No directory")
+
     def __init__(self, **kwargs):
         super(DirectorySetter, self).__init__(**kwargs)
 
@@ -34,8 +57,9 @@ class DirectorySetter(Widget):
                             size_hint=(0.9, 0.9))
         self._popup.open()
 
-    def save(self, test, test2):
-        pass
+    def save(self, path, name):
+        self.full_filepath = f"{path}/{name}"
+        self.dismiss_popup()
 
 
 class DirectorySetterTest(App):
