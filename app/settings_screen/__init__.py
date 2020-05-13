@@ -1,1 +1,1 @@
-from .directorysetter import DirectorySetter
+from .directorybar import DirectoryBar

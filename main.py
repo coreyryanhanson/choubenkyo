@@ -1,8 +1,8 @@
 from app import Choubenkyo
-#from android.permissions import request_permissions, Permission
+from android.permissions import request_permissions, Permission
 
-#request_permissions([Permission.WRITE_EXTERNAL_STORAGE,
-#                     Permission.READ_EXTERNAL_STORAGE])
+request_permissions([Permission.WRITE_EXTERNAL_STORAGE,
+                     Permission.READ_EXTERNAL_STORAGE])
 
 #from kivy.garden.iconfonts import register
 from os.path import dirname, join

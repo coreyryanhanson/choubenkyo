@@ -1,0 +1,68 @@
+<NewFolderDialog>
+    size_hint: (1, .3)
+    BoxLayout:
+        pos: self.parent.pos
+        size: self.parent.size
+        orientation: "vertical"
+        TextInput:
+            id: text_input
+            size_hint_y: None
+            height: self.parent.height
+            multiline: False
+        BoxLayout:
+            size_hint_y: None
+            height: self.parent.height
+            Button:
+                text: "Cancel"
+                on_release: root.cancel()
+            Button:
+                text: "Create"
+                on_release: root.create(f"{root.path}/{text_input.text}")
+
+<SaveDialog>
+    size_hint: (.9, .9)
+    BoxLayout:
+        pos: self.parent.pos
+        size: self.parent.size
+        orientation: "vertical"
+        FileChooserListView:
+            id: filechooser
+            path: root.dir_prefix
+            pos: self.parent.pos
+            size: self.parent.size
+            on_selection: text_input.text = self.selection and self.selection[0] or ''
+        TextInput:
+            id: text_input
+            size_hint_y: None
+            height: self.parent.height/10
+            multiline: False
+        BoxLayout:
+            size_hint_y: None
+            height: self.parent.height/10
+            Button:
+                text: "Cancel"
+                on_release: root.cancel()
+            Button:
+                text: "New Folder"
+                on_release: root.prompt_folder(filechooser.path)
+            Button:
+                text: "Save"
+                on_release: root.save(filechooser.path, text_input.text)
+
+<DirectoryBar>
+    size_hint: (1, .1)
+    BoxLayout:
+        pos: self.parent.pos
+        size: self.parent.size
+        orientation: "vertical"
+        Button:
+            on_release: root.prompt_save()
+            size_hint: (1, .5)
+            Label:
+                text: root.full_filepath
+                color: root.text_color
+                pos: self.parent.pos
+                size: self.texture_size
+                text_size: self.parent.width, self.parent.height
+                valign: 'middle'
+                halign: 'center'

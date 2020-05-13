@@ -5,13 +5,14 @@ from kivy.uix.button import Button
 from kivy.graphics import Color, Line
 from kivy.uix.boxlayout import BoxLayout
 from kivy.lang import Builder
-from kivy.properties import ObjectProperty, NumericProperty
+from kivy.properties import ObjectProperty, NumericProperty, StringProperty
 
 
 class KanjiDrawPad(Widget):
     drawing = ObjectProperty(None)
     x_canv_cent, y_canv_cent = NumericProperty(0), NumericProperty(0)
     canvas_denom = NumericProperty(0)
+    stroke_count = NumericProperty(0)
 
     def __init__(self, **kwargs):
         super(KanjiDrawPad, self).__init__(**kwargs)
@@ -47,6 +48,7 @@ class KanjiDrawPad(Widget):
         self.history = []
         self.stroke_count = 0
         self.strokes ={}
+
 
     def undo(self, obj):
         if self.stroke_count > 0:

@@ -2,551 +2,661 @@
     {
         "char_id": "a",
         "character": "あ",
-        "romanization": "a"
+        "romanization": "a",
+        "stroke_count": "3"
     },
     {
         "char_id": "i",
         "character": "い",
-        "romanization": "i"
+        "romanization": "i",
+        "stroke_count": "2"
     },
     {
         "char_id": "u",
         "character": "う",
-        "romanization": "u"
+        "romanization": "u",
+        "stroke_count": "2"
     },
     {
         "char_id": "e",
         "character": "え",
-        "romanization": "e"
+        "romanization": "e",
+        "stroke_count": "2"
     },
     {
         "char_id": "o",
         "character": "お",
-        "romanization": "o"
+        "romanization": "o",
+        "stroke_count": "3"
     },
     {
         "char_id": "ka",
         "character": "か",
-        "romanization": "ka"
+        "romanization": "ka",
+        "stroke_count": "3"
     },
     {
         "char_id": "ki",
         "character": "き",
-        "romanization": "ki"
+        "romanization": "ki",
+        "stroke_count": "3 or 4"
     },
     {
         "char_id": "ku",
         "character": "く",
-        "romanization": "ku"
+        "romanization": "ku",
+        "stroke_count": "1"
     },
     {
         "char_id": "ke",
         "character": "け",
-        "romanization": "ke"
+        "romanization": "ke",
+        "stroke_count": "3"
     },
     {
         "char_id": "ko",
         "character": "こ",
-        "romanization": "ko"
+        "romanization": "ko",
+        "stroke_count": "2"
     },
     {
         "char_id": "sa",
         "character": "さ",
-        "romanization": "sa"
+        "romanization": "sa",
+        "stroke_count": "2 or 3"
     },
     {
         "char_id": "si",
         "character": "し",
-        "romanization": "shi"
+        "romanization": "shi",
+        "stroke_count": "1"
     },
     {
         "char_id": "su",
         "character": "す",
-        "romanization": "su"
+        "romanization": "su",
+        "stroke_count": "2"
     },
     {
         "char_id": "se",
         "character": "せ",
-        "romanization": "se"
+        "romanization": "se",
+        "stroke_count": "3"
     },
     {
         "char_id": "so",
         "character": "そ",
-        "romanization": "so"
+        "romanization": "so",
+        "stroke_count": "1"
     },
     {
         "char_id": "ta",
         "character": "た",
-        "romanization": "ta"
+        "romanization": "ta",
+        "stroke_count": "4"
     },
     {
         "char_id": "ti",
         "character": "ち",
-        "romanization": "chi"
+        "romanization": "chi",
+        "stroke_count": "2"
     },
     {
         "char_id": "tu",
         "character": "つ",
-        "romanization": "tsu"
+        "romanization": "tsu",
+        "stroke_count": "1"
     },
     {
         "char_id": "te",
         "character": "て",
-        "romanization": "te"
+        "romanization": "te",
+        "stroke_count": "1"
     },
     {
         "char_id": "to",
         "character": "と",
-        "romanization": "to"
+        "romanization": "to",
+        "stroke_count": "2"
     },
     {
         "char_id": "na",
         "character": "な",
-        "romanization": "na"
+        "romanization": "na",
+        "stroke_count": "4"
     },
     {
         "char_id": "ni",
         "character": "に",
-        "romanization": "ni"
+        "romanization": "ni",
+        "stroke_count": "3"
     },
     {
         "char_id": "nu",
         "character": "ぬ",
-        "romanization": "nu"
+        "romanization": "nu",
+        "stroke_count": "2"
     },
     {
         "char_id": "ne",
         "character": "ね",
-        "romanization": "ne"
+        "romanization": "ne",
+        "stroke_count": "2"
     },
     {
         "char_id": "no",
         "character": "の",
-        "romanization": "no"
+        "romanization": "no",
+        "stroke_count": "1"
     },
     {
         "char_id": "ha",
         "character": "は",
-        "romanization": "ha"
+        "romanization": "ha",
+        "stroke_count": "3"
     },
     {
         "char_id": "hi",
         "character": "ひ",
-        "romanization": "hi"
+        "romanization": "hi",
+        "stroke_count": "1"
     },
     {
         "char_id": "hu",
         "character": "ふ",
-        "romanization": "fu"
+        "romanization": "fu",
+        "stroke_count": "4"
     },
     {
         "char_id": "he",
         "character": "へ",
-        "romanization": "he"
+        "romanization": "he",
+        "stroke_count": "1"
     },
     {
         "char_id": "ho",
         "character": "ほ",
-        "romanization": "ho"
+        "romanization": "ho",
+        "stroke_count": "4"
     },
     {
         "char_id": "ma",
         "character": "ま",
-        "romanization": "ma"
+        "romanization": "ma",
+        "stroke_count": "3"
     },
     {
         "char_id": "mi",
         "character": "み",
-        "romanization": "mi"
+        "romanization": "mi",
+        "stroke_count": "2"
     },
     {
         "char_id": "mu",
         "character": "む",
-        "romanization": "mu"
+        "romanization": "mu",
+        "stroke_count": "3"
     },
     {
         "char_id": "me",
         "character": "め",
-        "romanization": "me"
+        "romanization": "me",
+        "stroke_count": "2"
     },
     {
         "char_id": "mo",
         "character": "も",
-        "romanization": "mo"
+        "romanization": "mo",
+        "stroke_count": "3"
     },
     {
         "char_id": "ya",
         "character": "や",
-        "romanization": "ya"
+        "romanization": "ya",
+        "stroke_count": "3"
     },
     {
         "char_id": "yu",
         "character": "ゆ",
-        "romanization": "yu"
+        "romanization": "yu",
+        "stroke_count": "2"
     },
     {
         "char_id": "yo",
         "character": "よ",
-        "romanization": "yo"
+        "romanization": "yo",
+        "stroke_count": "2"
     },
     {
         "char_id": "ra",
         "character": "ら",
-        "romanization": "ra"
+        "romanization": "ra",
+        "stroke_count": "2"
     },
     {
         "char_id": "ri",
         "character": "り",
-        "romanization": "ri"
+        "romanization": "ri",
+        "stroke_count": "2"
     },
     {
         "char_id": "ru",
         "character": "る",
-        "romanization": "ru"
+        "romanization": "ru",
+        "stroke_count": "1"
     },
     {
         "char_id": "re",
         "character": "れ",
-        "romanization": "re"
+        "romanization": "re",
+        "stroke_count": "2"
     },
     {
         "char_id": "ro",
         "character": "ろ",
-        "romanization": "ro"
+        "romanization": "ro",
+        "stroke_count": "1"
     },
     {
         "char_id": "wa",
         "character": "わ",
-        "romanization": "wa"
+        "romanization": "wa",
+        "stroke_count": "2"
     },
     {
         "char_id": "wi",
         "character": "ゐ",
-        "romanization": "wi"
+        "romanization": "wi",
+        "stroke_count": "1"
     },
     {
         "char_id": "we",
         "character": "ゑ",
-        "romanization": "we"
+        "romanization": "we",
+        "stroke_count": "1"
     },
     {
         "char_id": "wo",
         "character": "を",
-        "romanization": "wo"
+        "romanization": "wo",
+        "stroke_count": "3"
     },
     {
         "char_id": "-n",
         "character": "ん",
-        "romanization": "n"
+        "romanization": "n",
+        "stroke_count": "1"
     },
     {
         "char_id": "ga",
         "character": "が",
-        "romanization": "ga"
+        "romanization": "ga",
+        "stroke_count": "5"
     },
     {
         "char_id": "gi",
         "character": "ぎ",
-        "romanization": "gi"
+        "romanization": "gi",
+        "stroke_count": "5 or 6"
     },
     {
         "char_id": "gu",
         "character": "ぐ",
-        "romanization": "gu"
+        "romanization": "gu",
+        "stroke_count": "3"
     },
     {
         "char_id": "ge",
         "character": "げ",
-        "romanization": "ge"
+        "romanization": "ge",
+        "stroke_count": "5"
     },
     {
         "char_id": "go",
         "character": "ご",
-        "romanization": "go"
+        "romanization": "go",
+        "stroke_count": "4"
     },
     {
         "char_id": "za",
         "character": "ざ",
-        "romanization": "za"
+        "romanization": "za",
+        "stroke_count": "4 or 5"
     },
     {
         "char_id": "zi",
         "character": "じ",
-        "romanization": "ji"
+        "romanization": "ji",
+        "stroke_count": "3"
     },
     {
         "char_id": "zu",
         "character": "ず",
-        "romanization": "zu"
+        "romanization": "zu",
+        "stroke_count": "4"
     },
     {
         "char_id": "ze",
         "character": "ぜ",
-        "romanization": "ze"
+        "romanization": "ze",
+        "stroke_count": "5"
     },
     {
         "char_id": "zo",
         "character": "ぞ",
-        "romanization": "zo"
+        "romanization": "zo",
+        "stroke_count": "3"
     },
     {
         "char_id": "da",
         "character": "だ",
-        "romanization": "da"
+        "romanization": "da",
+        "stroke_count": "6"
     },
     {
         "char_id": "di",
         "character": "ぢ",
-        "romanization": "ji"
+        "romanization": "dji",
+        "stroke_count": "4"
     },
     {
         "char_id": "du",
         "character": "づ",
-        "romanization": "zu"
+        "romanization": "dzu",
+        "stroke_count": "3"
     },
     {
         "char_id": "de",
         "character": "で",
-        "romanization": "de"
+        "romanization": "de",
+        "stroke_count": "3"
     },
     {
         "char_id": "do",
         "character": "ど",
-        "romanization": "do"
+        "romanization": "do",
+        "stroke_count": "4"
     },
     {
         "char_id": "ba",
         "character": "ば",
-        "romanization": "ba"
+        "romanization": "ba",
+        "stroke_count": "5"
     },
     {
         "char_id": "bi",
         "character": "び",
-        "romanization": "bi"
+        "romanization": "bi",
+        "stroke_count": "3"
     },
     {
         "char_id": "bu",
         "character": "ぶ",
-        "romanization": "bu"
+        "romanization": "bu",
+        "stroke_count": "6"
     },
     {
         "char_id": "be",
         "character": "べ",
-        "romanization": "be"
+        "romanization": "be",
+        "stroke_count": "3"
     },
     {
         "char_id": "bo",
         "character": "ぼ",
-        "romanization": "bo"
+        "romanization": "bo",
+        "stroke_count": "6"
     },
     {
         "char_id": "pa",
         "character": "ぱ",
-        "romanization": "pa"
+        "romanization": "pa",
+        "stroke_count": "4"
     },
     {
         "char_id": "pi",
         "character": "ぴ",
-        "romanization": "pi"
+        "romanization": "pi",
+        "stroke_count": "2"
     },
     {
         "char_id": "pu",
         "character": "ぷ",
-        "romanization": "pu"
+        "romanization": "pu",
+        "stroke_count": "5"
     },
     {
         "char_id": "pe",
         "character": "ぺ",
-        "romanization": "pe"
+        "romanization": "pe",
+        "stroke_count": "2"
     },
     {
         "char_id": "po",
         "character": "ぽ",
-        "romanization": "po"
+        "romanization": "po",
+        "stroke_count": "5"
     },
     {
         "char_id": "vu",
         "character": "ゔ",
-        "romanization": "vu"
+        "romanization": "vu",
+        "stroke_count": "4"
     },
     {
         "char_id": "kya",
         "character": "きゃ",
-        "romanization": "kya"
+        "romanization": "kya",
+        "stroke_count": "6 or 7"
     },
     {
         "char_id": "kyu",
         "character": "きゅ",
-        "romanization": "kyu"
+        "romanization": "kyu",
+        "stroke_count": "5 or 6"
     },
     {
         "char_id": "kyo",
         "character": "きょ",
-        "romanization": "kyo"
+        "romanization": "kyo",
+        "stroke_count": "5 or 6"
     },
     {
         "char_id": "sya",
         "character": "しゃ",
-        "romanization": "sha"
+        "romanization": "sha",
+        "stroke_count": "4"
     },
     {
         "char_id": "syu",
         "character": "しゅ",
-        "romanization": "shu"
+        "romanization": "shu",
+        "stroke_count": "3"
     },
     {
         "char_id": "syo",
         "character": "しょ",
-        "romanization": "sho"
+        "romanization": "sho",
+        "stroke_count": "3"
     },
     {
         "char_id": "tya",
         "character": "ちゃ",
-        "romanization": "cha"
+        "romanization": "cha",
+        "stroke_count": "5"
     },
     {
         "char_id": "tyu",
         "character": "ちゅ",
-        "romanization": "chu"
+        "romanization": "chu",
+        "stroke_count": "4"
     },
     {
         "char_id": "tyo",
         "character": "ちょ",
-        "romanization": "cho"
+        "romanization": "cho",
+        "stroke_count": "4"
     },
     {
         "char_id": "nya",
         "character": "にゃ",
-        "romanization": "nya"
+        "romanization": "nya",
+        "stroke_count": "6"
     },
     {
         "char_id": "nyu",
         "character": "にゅ",
-        "romanization": "nyu"
+        "romanization": "nyu",
+        "stroke_count": "5"
     },
     {
         "char_id": "nyo",
         "character": "にょ",
-        "romanization": "nyo"
+        "romanization": "nyo",
+        "stroke_count": "5"
     },
     {
         "char_id": "hya",
         "character": "ひゃ",
-        "romanization": "hya"
+        "romanization": "hya",
+        "stroke_count": "4"
     },
     {
         "char_id": "hyu",
         "character": "ひゅ",
-        "romanization": "hyu"
+        "romanization": "hyu",
+        "stroke_count": "3"
     },
     {
         "char_id": "hyo",
         "character": "ひょ",
-        "romanization": "hyo"
+        "romanization": "hyo",
+        "stroke_count": "3"
     },
     {
         "char_id": "mya",
         "character": "みゃ",
-        "romanization": "mya"
+        "romanization": "mya",
+        "stroke_count": "5"
     },
     {
         "char_id": "myu",
         "character": "みゅ",
-        "romanization": "myu"
+        "romanization": "myu",
+        "stroke_count": "4"
     },
     {
         "char_id": "myo",
         "character": "みょ",
-        "romanization": "myo"
+        "romanization": "myo",
+        "stroke_count": "4"
     },
     {
         "char_id": "rya",
         "character": "りゃ",
-        "romanization": "rya"
+        "romanization": "rya",
+        "stroke_count": "5"
     },
     {
         "char_id": "ryu",
         "character": "りゅ",
-        "romanization": "ryu"
+        "romanization": "ryu",
+        "stroke_count": "4"
     },
     {
         "char_id": "ryo",
         "character": "りょ",
-        "romanization": "ryo"
+        "romanization": "ryo",
+        "stroke_count": "4"
     },
     {
         "char_id": "gya",
         "character": "ぎゃ",
-        "romanization": "gya"
+        "romanization": "gya",
+        "stroke_count": "8 or 9"
     },
     {
         "char_id": "gyu",
         "character": "ぎゅ",
-        "romanization": "gyu"
+        "romanization": "gyu",
+        "stroke_count": "7 or 8"
     },
     {
         "char_id": "gyo",
         "character": "ぎょ",
-        "romanization": "gyo"
+        "romanization": "gyo",
+        "stroke_count": "7 or 8"
     },
     {
         "char_id": "zya",
         "character": "じゃ",
-        "romanization": "ja"
+        "romanization": "ja",
+        "stroke_count": "6"
     },
     {
         "char_id": "zyu",
         "character": "じゅ",
-        "romanization": "ju"
+        "romanization": "ju",
+        "stroke_count": "5"
     },
     {
         "char_id": "zyo",
         "character": "じょ",
-        "romanization": "jo"
+        "romanization": "jo",
+        "stroke_count": "5"
     },
     {
         "char_id": "dya",
         "character": "ぢゃ",
-        "romanization": "dja"
+        "romanization": "dja",
+        "stroke_count": "7"
     },
     {
         "char_id": "dyu",
         "character": "ぢゅ",
-        "romanization": "dju"
+        "romanization": "dju",
+        "stroke_count": "6"
     },
     {
         "char_id": "dyo",
         "character": "ぢょ",
-        "romanization": "djo"
+        "romanization": "djo",
+        "stroke_count": "6"
     },
     {
         "char_id": "bya",
         "character": "びゃ",
-        "romanization": "bya"
+        "romanization": "bya",
+        "stroke_count": "6"
     },
     {
         "char_id": "byu",
         "character": "びゅ",
-        "romanization": "byu"
+        "romanization": "byu",
+        "stroke_count": "5"
     },
     {
         "char_id": "byo",
         "character": "にょ",
-        "romanization": "byo"
+        "romanization": "byo",
+        "stroke_count": "5"
     },
     {
         "char_id": "pya",
         "character": "ぴゃ",
-        "romanization": "pya"
+        "romanization": "pya",
+        "stroke_count": "5"
     },
     {
         "char_id": "pyu",
         "character": "ぴゅ",
-        "romanization": "pyu"
+        "romanization": "pyu",
+        "stroke_count": "4"
     },
     {
         "char_id": "pyo",
         "character": "ぴょ",
-        "romanization": "pyo"
+        "romanization": "pyo",
+        "stroke_count": "4"
     }
 ]

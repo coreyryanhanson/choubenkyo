@@ -1,3 +1,5 @@
+import os
+import pickle
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.widget import Widget
@@ -25,27 +27,33 @@ class AllScreens(ScreenManager):
 class Choubenkyo(App):
     def __init__(self, **kwargs):
         super(Choubenkyo, self).__init__(**kwargs)
+
+    def save_press(self, obj):
+        path, usr_prefix = self.dir_chooser.full_filepath, self.dir_chooser.file_prefix
+        char_prefix = self.char_box.character["char_id"]
+        instance_name = f"{char_prefix}-{usr_prefix}"
+        strokes = self.main_canvas.strokes
+        if len(strokes) > 0 and path != "Warning: Choose A Directory":
+            count = len([item for item in os.listdir(path) if item.startswith(instance_name)])
+            full_filename = f"{path}/{instance_name}_{count:04d}"
+            self.save_pickle(strokes, full_filename)
+            self.main_canvas.clear_canvas(obj)
+            self.char_box.update_char(obj)
+
+    def save_pickle(self, data, path):
+        with open(path, "wb") as f:
+            pickle.dump(data, f)
+
     def build(self):
         main_app = KanaScreen()
         main_widgets = main_app.children[0].children
-        main_canvas = main_widgets[0]
-        char_box = main_widgets[2]
+        self.main_canvas = main_widgets[0]
+        self.dir_chooser = main_widgets[3]
+        self.char_box = main_widgets[2]
         draw_buttons = main_widgets[1].children[0].children
-        draw_buttons[1].bind(on_release=char_box.update_char)
-        draw_buttons[2].bind(on_release=main_canvas.clear_canvas)
-        draw_buttons[3].bind(on_release=main_canvas.undo)
-        return main_app
 
-class Choubenkyo(App):
-    def __init__(self, **kwargs):
-        super(Choubenkyo, self).__init__(**kwargs)
-
-    def build(self):
-        main_app = AllScreens(transition=SwapTransition())
-        test = main_app.get_screen('kana_test')
-        settings = main_app.get_screen('settings')
-        settings_buttons = settings.children[0].children[0].children[0].children
-        print(dir(settings_buttons[0]))
-        print(settings_buttons[0])
-        settings_buttons[0].bind(on_release=main_app.switch_to(test))
+        draw_buttons[0].bind(on_release=self.save_press)
+        draw_buttons[1].bind(on_release=self.char_box.update_char)
+        draw_buttons[2].bind(on_release=self.main_canvas.clear_canvas)
+        draw_buttons[3].bind(on_release=self.main_canvas.undo)
         return main_app

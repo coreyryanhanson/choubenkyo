@@ -23,3 +23,13 @@
             valign: 'middle'
             halign: 'center'
             font_size: .15 *  self.parent.height
+        Label:
+            size_hint: (1, .4)
+            text:  root.character['stroke_count'] + " strokes"
+            font_name: 'app/assets/fonts/NotoSerifJP-Light.otf'
+            text_size: self.parent.width, self.parent.height
+            pos: self.parent.pos
+            size: self.texture_size
+            valign: 'middle'
+            halign: 'center'
+            font_size: .07 *  self.parent.height

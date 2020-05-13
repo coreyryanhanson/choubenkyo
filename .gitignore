@@ -1,0 +1,7 @@
+.buildozer
+.idea
+bin/*
+app/__pycache__
+app/settings_screen/__pycache__
+app/draw_screen/__pycache__
+app/assets/fonts/Noto_Serif_JP.zip
