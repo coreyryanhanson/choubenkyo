@@ -2,7 +2,6 @@
     x_canv_cent: self.size[0]/2
     y_canv_cent: self.size[1]/2
     canvas_denom: draw_area.norm_image_size[0]/2
-    id: kanji_draw_pad
     AnchorLayout:
         pos: self.parent.pos
         size: self.parent.size
@@ -15,6 +14,8 @@
         Widget:
             id: subcanvas
             size_hint: (None, None)
-            canvas: root.drawing
             pos: self.parent.pos
             size: draw_area.norm_image_size
+            canvas:
+                Color:
+                    hsv: (1, 1, 1)

@@ -3,6 +3,7 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.widget import Widget
 from .view import MainWindow
 from .draw_screen import *
+from .settings_screen import *
 from kivy.uix.screenmanager import ScreenManager, Screen
 
 
@@ -12,6 +13,10 @@ Builder.load_file('app/main.kv')
 class KanaScreen(Screen):
     def __init__(self, **kwargs):
         super(KanaScreen, self).__init__(**kwargs)
+
+class SettingsScreen(Screen):
+    def __init__(self, **kwargs):
+        super(SettingsScreen, self).__init__(**kwargs)
 
 class Choubenkyo(App):
     def __init__(self, **kwargs):
@@ -25,4 +30,11 @@ class Choubenkyo(App):
         draw_buttons[1].bind(on_release=char_box.update_char)
         draw_buttons[2].bind(on_release=main_canvas.clear_canvas)
         draw_buttons[3].bind(on_release=main_canvas.undo)
+        return main_app
+
+class Choubenkyo(App):
+    def __init__(self, **kwargs):
+        super(Choubenkyo, self).__init__(**kwargs)
+    def build(self):
+        main_app = SettingsScreen()
         return main_app

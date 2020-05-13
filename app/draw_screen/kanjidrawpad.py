@@ -7,7 +7,6 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.lang import Builder
 from kivy.properties import ObjectProperty, NumericProperty
 
-Builder.load_file('app/draw_screen/kanjidrawpad.kv')
 
 class KanjiDrawPad(Widget):
     drawing = ObjectProperty(None)
@@ -24,8 +23,6 @@ class KanjiDrawPad(Widget):
         with self.children[0].children[1].canvas:
             if self.children[0].children[0].collide_point(*touch.pos):
                 touch.grab(self)
-                color = (1, 0, 1)
-                Color(*color, mode='hsv')
                 self.stroke_count += 1
                 touch.ud['line'] = Line(points=(touch.x, touch.y), width=3)
                 return True
@@ -45,7 +42,9 @@ class KanjiDrawPad(Widget):
             return True
 
     def clear_canvas(self, obj):
-        self.children[0].children[1].canvas.clear()
+        #self.children[0].children[1].canvas.clear()
+        del self.children[0].children[1].canvas.children[3:]
+        self.history = []
         self.stroke_count = 0
         self.strokes ={}
 
@@ -72,4 +71,5 @@ class KanjiDrawPadTest(App):
 
 
 if __name__ == '__main__':
+    Builder.load_file('app/draw_screen/kanjidrawpad.kv')
     KanjiDrawPadTest().run()

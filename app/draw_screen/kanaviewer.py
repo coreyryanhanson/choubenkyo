@@ -8,10 +8,6 @@ from kivy.graphics import Color, Rectangle
 from kivy.properties import DictProperty
 
 
-Builder.load_file('app/draw_screen/kanaviewer.kv')
-
-
-
 class KanaViewer(Widget):
 
     character = DictProperty(None)
@@ -39,4 +35,5 @@ class KanaViewerTest(App):
 
 
 if __name__ == '__main__':
+    Builder.load_file('app/draw_screen/kanaviewer.kv')
     KanaViewerTest().run()

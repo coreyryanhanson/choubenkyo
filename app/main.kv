@@ -1,6 +1,7 @@
 #: include app/draw_screen/kanjidrawpad.kv
 #: include app/draw_screen/kanaviewer.kv
 #: include app/draw_screen/quizbuttons.kv
+#: include app/settings_screen/directorysetter.kv
 
 <KanaScreen>
     BoxLayout:
@@ -10,3 +11,10 @@
         KanaViewer:
         QuizButtons:
         KanjiDrawPad:
+
+<SettingsScreen>
+    BoxLayout:
+        pos: self.parent.pos
+        size: self.parent.size
+        orientation: "vertical"
+        DirectorySetter:

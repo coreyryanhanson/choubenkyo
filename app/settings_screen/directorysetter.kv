@@ -1,19 +1,23 @@
-<SaveDialogue>
+<SaveDialog>
+    size_hint: (.9, .9)
     BoxLayout:
         pos: self.parent.pos
         size: self.parent.size
         orientation: "vertical"
         FileChooserListView:
+            id: filechooser
+            path: root.dir_prefix
             pos: self.parent.pos
             size: self.parent.size
+            on_selection: text_input.text = self.selection and self.selection[0] or ''
         TextInput:
             id: text_input
             size_hint_y: None
-            height: 30
+            height: self.parent.height/10
             multiline: False
         BoxLayout:
             size_hint_y: None
-            height: 30
+            height: self.parent.height/10
             Button:
                 text: "Cancel"
                 on_release: root.cancel()
@@ -34,6 +38,7 @@
             valign: 'middle'
             halign: 'center'
         Button:
+            on_release: root.prompt_save()
             Label:
                 text: "Choose"
                 pos: self.parent.pos
