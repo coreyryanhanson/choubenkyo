@@ -1,8 +1,7 @@
 import os
 import pickle
+
 from kivy.app import App
-from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.widget import Widget
 from .view import MainWindow
 from .draw_screen import *
 from .settings_screen import *
@@ -39,6 +38,7 @@ class Choubenkyo(App):
             self.save_pickle(strokes, full_filename)
             self.main_canvas.clear_canvas(obj)
             self.char_box.update_char(obj)
+            print(f"Saved {full_filename}")
 
     def save_pickle(self, data, path):
         with open(path, "wb") as f:
@@ -50,6 +50,8 @@ class Choubenkyo(App):
         self.main_canvas = main_widgets[0]
         self.dir_chooser = main_widgets[3]
         self.char_box = main_widgets[2]
+
+
         draw_buttons = main_widgets[1].children[0].children
 
         draw_buttons[0].bind(on_release=self.save_press)

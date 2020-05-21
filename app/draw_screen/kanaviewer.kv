@@ -1,11 +1,16 @@
 <KanaViewer>
-    size_hint: (1, .9)
+    charbox_pos: charbox.pos
+    charbox_width: charbox.width
+    charbox_height: charbox.height
+    size_hint: (1, .85)
     BoxLayout:
         orientation: "vertical"
         pos: self.parent.pos
         size: self.parent.size
         Label:
+            id: charbox
             text: root.character["character"]
+            color: root.character_color
             font_name: 'app/assets/fonts/NotoSerifJP-Light.otf'
             text_size: self.parent.width, self.parent.height
             pos: self.parent.pos
