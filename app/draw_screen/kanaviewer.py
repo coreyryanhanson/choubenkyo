@@ -18,6 +18,7 @@ class KanaViewer(Widget):
     charbox_width = NumericProperty(0)
     charbox_height = NumericProperty(0)
     character_color = ListProperty([1, 1, 1, 1])
+    current_font = StringProperty("")
 
     def __init__(self, **kwargs):
         super(KanaViewer, self).__init__(**kwargs)
@@ -31,6 +32,9 @@ class KanaViewer(Widget):
 
         self.charclock = Clock.schedule_once(self.do_nothing, .1)
         self.lineclock = Clock.schedule_once(self.do_nothing, .1)
+
+        self.allfonts = ["KosugiMaru-Regular.ttf", 'MPLUS1p-Light.ttf', "NotoSerifJP-Light.otf"]
+        self.current_font = self.choose_font()
 
     def on_touch_down(self, touch):
         if self.collide_point(*touch.pos):
@@ -106,8 +110,12 @@ class KanaViewer(Widget):
         scaled = self.rescale_line_coords(unpacked, x_range, y_range)
         return scaled
 
+    def choose_font(self):
+        return "app/assets/fonts/" + np.random.choice(self.allfonts)
+
     def update_char(self, obj):
         self.character = np.random.choice(self.characters)
+        self.current_font = self.choose_font()
 
     def parse_json(self, path):
         with open(path) as f:

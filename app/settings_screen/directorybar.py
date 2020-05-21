@@ -5,6 +5,10 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.popup import Popup
 from kivy.lang import Builder
 from kivy.properties import ObjectProperty, StringProperty, ListProperty
+from android import storage
+from kivy.config import Config
+from kivy.app import App
+
 
 class NewFolderDialog(FloatLayout):
     cancel = ObjectProperty(None)
@@ -20,7 +24,7 @@ class SaveDialog(FloatLayout):
     text_input = ObjectProperty(None)
     save = ObjectProperty(None)
     create_dir = ObjectProperty(None)
-    dir_prefix = StringProperty("/storage/emulated/0/")
+    dir_prefix = StringProperty(storage.primary_external_storage_path())
 
     def __init__(self, **kwargs):
         super(SaveDialog, self).__init__(**kwargs)
@@ -64,6 +68,10 @@ class DirectoryBar(Widget):
         self.file_prefix = name
         self.dismiss_popup()
         self.text_color = [1, 1, 1, 1]
+        config = App.get_running_app().config
+        config.set('saving', 'filepath', self.full_filepath)
+        config.set('saving', 'file_prefix', self.file_prefix)
+        config.write()
 
 
 class DirectoryBarTest(App):

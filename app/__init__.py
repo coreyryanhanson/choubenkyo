@@ -44,6 +44,20 @@ class Choubenkyo(App):
         with open(path, "wb") as f:
             pickle.dump(data, f)
 
+    def remember_settings(self):
+        config = self.config
+        self.dir_chooser.full_filepath = config.get('saving', 'filepath')
+        self.dir_chooser.file_prefix = config.get('saving', 'file_prefix')
+        if self.dir_chooser.full_filepath != "Warning: Choose A Directory":
+            self.dir_chooser.text_color = [1, 1, 1, 1]
+
+
+    def build_config(self, config):
+        config.setdefaults('saving', {
+            'filepath': "Warning: Choose A Directory",
+            'file_prefix': ''
+        })
+
     def build(self):
         main_app = KanaScreen()
         main_widgets = main_app.children[0].children
@@ -51,6 +65,7 @@ class Choubenkyo(App):
         self.dir_chooser = main_widgets[3]
         self.char_box = main_widgets[2]
 
+        self.remember_settings()
 
         draw_buttons = main_widgets[1].children[0].children
 

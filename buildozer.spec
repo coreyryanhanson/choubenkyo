@@ -4,7 +4,7 @@
 title = ChouBenkyo
 
 # (str) Package name
-package.name = myapp
+package.name = choubenkyo
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = com.sofuego
@@ -13,7 +13,7 @@ package.domain = com.sofuego
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,kv,atlas,otf,json,pickle
+source.include_exts = py,png,jpg,kv,atlas,otf,ttf,json,pickle
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png

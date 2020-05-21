@@ -11,7 +11,7 @@
             id: charbox
             text: root.character["character"]
             color: root.character_color
-            font_name: 'app/assets/fonts/NotoSerifJP-Light.otf'
+            font_name: root.current_font
             text_size: self.parent.width, self.parent.height
             pos: self.parent.pos
             size: self.texture_size
@@ -21,7 +21,7 @@
         Label:
             size_hint: (1, .4)
             text: root.character["romanization"]
-            font_name: 'app/assets/fonts/NotoSerifJP-Light.otf'
+            font_name: root.current_font
             text_size: self.parent.width, self.parent.height
             pos: self.parent.pos
             size: self.texture_size
@@ -31,7 +31,7 @@
         Label:
             size_hint: (1, .4)
             text:  root.character['stroke_count'] + " strokes"
-            font_name: 'app/assets/fonts/NotoSerifJP-Light.otf'
+            font_name: root.current_font
             text_size: self.parent.width, self.parent.height
             pos: self.parent.pos
             size: self.texture_size
