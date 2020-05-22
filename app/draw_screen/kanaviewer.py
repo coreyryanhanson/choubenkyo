@@ -33,7 +33,7 @@ class KanaViewer(Widget):
         self.charclock = Clock.schedule_once(self.do_nothing, .1)
         self.lineclock = Clock.schedule_once(self.do_nothing, .1)
 
-        self.allfonts = ["KosugiMaru-Regular.ttf", 'MPLUS1p-Light.ttf', "NotoSerifJP-Light.otf"]
+        self.allfonts = ['MPLUS1p-Light.ttf', "NotoSerifJP-Light.otf"]
         self.current_font = self.choose_font()
 
     def on_touch_down(self, touch):
